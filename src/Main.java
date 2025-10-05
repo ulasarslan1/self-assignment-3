@@ -7,7 +7,7 @@ import Resources.Resources;
 public class Main {
     public static void main(String[] args) {
 
-
+		//Resources -> Ulas & Ashwin
     	Resources human = new HumanResources("HR-1", "Operator", 100.0, 2.5);
     	Resources nonHuman = new NonHumanResources("NH-1", "Robotic Arm", 5000, 2);
     	
@@ -25,7 +25,7 @@ public class Main {
 
 		System.out.println();
 
-
+		// Processes -> Mrunal
 		// Industrial Process
 		String[] industrialOps = {"Welding", "Painting", "Packaging"};
 		IndustrialProcess ip = new IndustrialProcess("IP-001", industrialOps);
