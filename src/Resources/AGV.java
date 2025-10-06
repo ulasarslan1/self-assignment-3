@@ -1,6 +1,6 @@
 package Resources;
 
-public class AGV extends NonHumanResources{
+public class AGV extends HardwareResources{
 
 	private double batteryLoad;
 	private double consumption;

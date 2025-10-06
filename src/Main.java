@@ -14,16 +14,18 @@ public class Main {
 		Resources human = new HumanResources("HR-1", "Operator", 100.0, 2.5);
 		Resources nonHuman = new NonHumanResources("NH-1", "Robotic Arm", 5000, 2);
 		Resources software = new SoftwareResources("SW-1", "ERP software", 9000, 15);
+		Resources hardware = new HardwareResources("HW-1", "AGVs", 10000, 20);
 		Resources material = new MaterialResources("M-1", "Steel", 5000, 1);
 
 		System.out.println(human.getData());
 		System.out.println(nonHuman.getData());
 		System.out.println(software.getData());
+		System.out.println(hardware.getData());
 		System.out.println(material.getData());
 		System.out.println();
 
-		int totalAmount = human.getAmount() + nonHuman.getAmount() + software.getAmount() + material.getAmount();
-		double totalCost = human.calculateCost() + nonHuman.calculateCost() + software.calculateCost() + material.calculateCost();
+		int totalAmount = human.getAmount() + nonHuman.getAmount() + software.getAmount() + hardware.getAmount() + material.getAmount();
+		double totalCost = human.calculateCost() + nonHuman.calculateCost() + software.calculateCost() + hardware.calculateCost() + material.calculateCost();
 
 		System.out.println("--- Cost of Resources ---");
 
@@ -96,6 +98,9 @@ public class Main {
 
 
     }
+
+
+
 
 
 
