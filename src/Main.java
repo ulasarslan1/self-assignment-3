@@ -28,7 +28,10 @@ public class Main {
 		// Processes -> Mrunal
 		// Industrial Process
 		String[] industrialOps = {"Welding", "Painting", "Packaging"};
-		IndustrialProcess ip = new IndustrialProcess("IP-001", industrialOps);
+		double[] industrialCosts = {100, 150, 120};
+		int[] industrialResources = {2, 3, 1};
+
+		IndustrialProcess ip = new IndustrialProcess("IP-001", industrialOps, industrialCosts, industrialResources);
 
 		System.out.println("--- Industrial Process ---");
 		ip.showDetails();
@@ -39,7 +42,10 @@ public class Main {
 
 		// Management Process
 		String[] managementOps = {"Scheduling", "QualityCheck"};
-		ManagementProcess mp = new ManagementProcess("MP-001", managementOps);
+		double[] managementCosts = {80, 60};
+		int[] managementResources = {1, 1};
+
+		ManagementProcess mp = new ManagementProcess("MP-001", managementOps, managementCosts, managementResources);
 
 		System.out.println("--- Management Process ---");
 		mp.showDetails();
