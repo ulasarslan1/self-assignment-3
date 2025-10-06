@@ -51,6 +51,24 @@ public class Main {
 		mp.showDetails();
 		System.out.println("Total Duration: " + mp.processDuration() + " hours");
 		mp.processResources();
+
+		// ioperation -Adithya
+		System.out.println();
+        System.out.println("--- Operations ---");
+
+        // Human Operation
+        HumanOperation ho = new HumanOperation("HOP-001", "Assembly", 5.0, 3, 150.0);
+        ho.showOperationInfo();
+        ho.performOperation();
+        System.out.println("Cost: " + ho.calculateCost() + " INR");
+
+        System.out.println();
+
+       // Transport Operation
+      TransportOperation to = new TransportOperation("TOP-001", "Material Transport", 4.0, 2, 200.0, 50.0);
+      to.showOperationInfo();
+      to.performOperation();
+      System.out.println("Cost: " + to.calculateCost() + " INR");
 	}
 
 
