@@ -1,6 +1,6 @@
 package Resources;
 
-public class HardwareResources extends Resources{
+public class HardwareResources extends NonHumanResources{
 	
 	//Fields
 	private String name; 
@@ -8,8 +8,7 @@ public class HardwareResources extends Resources{
 	
 	//Constructor
 	public HardwareResources(String iD, String name, double costPerUnit, int amount) {
-		super(iD, costPerUnit, amount);
-		this.name = name;
+		super(iD, name , 0 ,0);
 	}
 	
 	//Getters and setters
