@@ -12,6 +12,24 @@ public abstract class Process {
     public abstract double processDuration();
     public abstract void processResources();
 
+    // Method to calculate total cost
+    public double calculateTotalCost() {
+        double total = 0;
+        for (double cost : operationCosts) {
+            total += cost;
+        }
+        return total;
+    }
+
+    // Method to calculate total amount of resources used
+    public int calculateTotalResources() {
+        int total = 0;
+        for (int amount : resourceAmounts) {
+            total += amount;
+        }
+        return total;
+    }
+
     public void showDetails() {
         System.out.println("Process ID: " + ID);
         System.out.print("Operations: ");
