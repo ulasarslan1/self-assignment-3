@@ -3,8 +3,8 @@ package Processes;
 //Concrete subclass of Process
 public class ManagementProcess extends Process {
 
- public ManagementProcess(String ID, String[] operations) {
-     super(ID, operations);
+ public ManagementProcess(String ID, String[] operations,double[] operationCosts, int[] resourceAmounts) {
+     super(ID, operations, operationCosts, resourceAmounts); // superclass call
  }
 
  @Override
